@@ -34,7 +34,7 @@ export default function Register() {
   async function sendData(values) {
     setLoading(true);
     let { data } = await axios
-      .post(`http://localhost:5000/api/user/signUp`, values)
+      .post(`https://password-reset-backend-ppmr.onrender.com/api/user/signUp`, values)
       .then((response) => {
         return response;
       })

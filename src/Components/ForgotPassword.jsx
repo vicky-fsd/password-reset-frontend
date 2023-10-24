@@ -23,7 +23,7 @@ export default function ForgotPassword() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/ForgotPassword/",
+        "https://password-reset-backend-ppmr.onrender.com/api/user/ForgotPassword/",
         values 
       );
      
